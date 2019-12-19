@@ -1,0 +1,8 @@
+<nav>
+    <ul *ngIf="pokemons">
+        <li *ngFor="let pokemon of pokemons" (click)="buscarPokemon(pokemon.name)">
+            <span class="badge"><img [src]="pokemon.sprites.front_default"/></span>
+            <div>{{pokemon.name | titlecase}}</div>
+        </li>
+    </ul>
+</nav>
