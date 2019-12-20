@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { PokemonApiComponent } from './pokemon-api/pokemon-api.component';
 import { FormsModule } from '@angular/forms';
-import { PokemonDisplayComponent } from './pokemon-display/pokemon-display.component'
+import { PokemonDisplayComponent } from './pokemon-display/pokemon-display.component';
+import { FiltroPokemonComponent } from './filtro-pokemon/filtro-pokemon.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     PokemonApiComponent,
-    PokemonDisplayComponent
+    PokemonDisplayComponent,
+    FiltroPokemonComponent
   ],
   imports: [
     BrowserModule,

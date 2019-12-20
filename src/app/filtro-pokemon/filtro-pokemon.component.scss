@@ -1,0 +1,45 @@
+$azul_legal:rgb(81, 183, 241);
+;
+* {
+    margin: 0;
+    padding: 0
+}
+
+img {
+    width: 40%;
+    height: 40%;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    border-radius: 10px 0 0 10px;
+    background-color: $azul_legal;
+}
+
+.pesquisa {
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0 3% 0;
+    height: 3vh;
+    width: 90%;
+}
+
+input {
+    background-color: transparent;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid $azul_legal;
+    border-left: none;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 5%;
+    color: white
+}
+
+input:focus {
+    background-color: white;
+    color: gray;
+}
