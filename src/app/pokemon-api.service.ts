@@ -22,10 +22,15 @@ export class PokemonApiService {
               Pokemin.name = loucura.name;
               Pokemin.sprites = loucura.sprites;
               Pokemin.id = loucura.id;
+              //Pokemin.moves = loucura.moves.map(move => )
               this.Poke.push(Pokemin)
             }
-          );}}
+          );
+        }
+      }
     )
+   
+   setTimeout(A =>{ this.Poke.sort(((a,b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0)))}, 1000);
     console.log(this.Poke);
     return this.Poke;
   }

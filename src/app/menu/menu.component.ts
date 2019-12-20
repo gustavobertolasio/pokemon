@@ -19,11 +19,11 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
     this.pokemons = this.apiRequest.pegarPokemons();
     
-    /*.subscribe(
+    /*
       
-  }
+  
 
-  buscarPokemon(pokemonPesquisa: string) {
+   {
         this.apiRequest.pegarPokemon(pokemonPesquisa)
       .subscribe(
         (resposta) => {
@@ -37,7 +37,9 @@ export class MenuComponent implements OnInit {
     //console.log(resposta);
   }
 
-
+  buscarPokemon(pokemonPesquisa: string){
+    console.log(pokemonPesquisa)
+  }
 
 }
 
